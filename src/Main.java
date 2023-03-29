@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+        BmiService service = new BmiService();
+        int mass = 56;
+        int height = (int)1.65;
+
+        int index = service.calculate(bodyMassIndex);
+
+        System.out.println(index);
+            }
 }
