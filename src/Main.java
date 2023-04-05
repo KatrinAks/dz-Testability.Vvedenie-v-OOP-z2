@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        int mass = 56;
-        int height = (int)1.65;
+        int kg = 56;
+        double a = 1.65;
 
-        int index = service.calculate(bodyMassIndex);
+        int mass = service.calculate(56, (int)1.65);
 
-        System.out.println(index);
-            }
+        System.out.println("Индекс массы тела" + mass);
+    }
 }

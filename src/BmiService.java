@@ -1,13 +1,15 @@
 public class BmiService {
 
-    public int calculate(int bodyMassIndex) {
+    public int calculate(int kg, int height) {
         int index = 0; // индекс массы тела
-        int mass = 0; // вес в килограммах
-        int height = 0; // рост в метрах
-        int x = 2;
+        kg = 0; //вес в килограммах
+        double a = 0;
+        double b = 2;
+        height =(int) Math.pow (a, b);
 
-        if (mass > 0) {
-            index = mass / (height * x);
+
+        if (index > 0) {
+            index = kg / height;
         }
         return index;
     }
